@@ -10,10 +10,10 @@ export const useCirurgiaFormik = (onSubmitCallback) => {
             pacienteSexo: '',
             responsavelNome: '',
             responsavelNacionalidade: '',
-            responsavelCpf: '',
+            responsavelCpf: undefined,
             responsavelTelefone: undefined,
             responsavelEndereco: '',
-            responsavelCep: '',
+            responsavelCep: undefined,
             responsavelCidade: '',
             responsavelSexo: ''
         },

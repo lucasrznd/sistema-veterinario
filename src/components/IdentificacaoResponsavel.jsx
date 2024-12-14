@@ -1,5 +1,6 @@
 import { Calendar } from "primereact/calendar";
 import { InputText } from "primereact/inputtext";
+import { InputMask } from "primereact/inputmask";
 import { RadioButton } from "primereact/radiobutton";
 
 export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErrorMessage }) {
@@ -15,6 +16,7 @@ export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErro
                         <InputText
                             id="responsavelNome"
                             name="responsavelNome"
+                            maxLength={50}
                             value={formik.values.responsavelNome}
                             onChange={formik.handleChange}
                             className={isFormFieldValid('responsavelNome') ? "p-invalid uppercase" : "uppercase"} />
@@ -31,6 +33,7 @@ export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErro
                         <InputText
                             id="responsavelNacionalidade"
                             name="responsavelNacionalidade"
+                            maxLength={50}
                             value={formik.values.responsavelNacionalidade}
                             onChange={formik.handleChange}
                             className={isFormFieldValid('responsavelNacionalidade') ? "p-invalid uppercase" : "uppercase"} />
@@ -44,9 +47,10 @@ export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErro
                         <span className="p-inputgroup-addon">
                             <i className="pi pi-user"></i>
                         </span>
-                        <InputText
+                        <InputMask
                             id="responsavelCpf"
                             name="responsavelCpf"
+                            mask="999.999.999-99"
                             value={formik.values.responsavelCpf}
                             onChange={formik.handleChange}
                             className={isFormFieldValid('responsavelCpf') ? "p-invalid uppercase" : "uppercase"} />
@@ -60,9 +64,10 @@ export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErro
                         <span className="p-inputgroup-addon">
                             <i className="pi pi-phone"></i>
                         </span>
-                        <InputText
+                        <InputMask
                             id="responsavelTelefone"
                             name="responsavelTelefone"
+                            mask="(99) 9 9999-9999"
                             value={formik.values.responsavelTelefone}
                             onChange={formik.handleChange}
                             className={isFormFieldValid('responsavelTelefone') ? "p-invalid uppercase" : "uppercase"} />
@@ -79,6 +84,7 @@ export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErro
                         <InputText
                             id="responsavelEndereco"
                             name="responsavelEndereco"
+                            maxLength={70}
                             value={formik.values.responsavelEndereco}
                             onChange={formik.handleChange}
                             className={isFormFieldValid('responsavelEndereco') ? "p-invalid uppercase" : "uppercase"} />
@@ -92,7 +98,8 @@ export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErro
                         <span className="p-inputgroup-addon">
                             <i className="pi pi-home"></i>
                         </span>
-                        <InputText
+                        <InputMask
+                            mask="99999-999"
                             id="responsavelCep"
                             name="responsavelCep"
                             value={formik.values.responsavelCep}
