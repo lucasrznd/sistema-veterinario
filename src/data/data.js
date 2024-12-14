@@ -1,0 +1,1 @@
+export const especiesDeAnimais = [{ descricao: 'Canina' }, { descricao: 'Felina' }];
