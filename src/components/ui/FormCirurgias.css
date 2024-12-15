@@ -1,0 +1,22 @@
+.accordion-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas por linha */
+    gap: 16px; /* Espaçamento entre os AccordionTabs */
+    margin: 0 auto;
+}
+
+.accordion-item {
+    width: 100%; /* Faz com que cada Accordion ocupe igualmente sua célula na grid */
+}
+
+@media (max-width: 768px) {
+    .accordion-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas por linha em tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .accordion-grid {
+        grid-template-columns: 1fr; /* 1 coluna por linha em telas muito pequenas */
+    }
+}

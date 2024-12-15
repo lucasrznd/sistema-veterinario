@@ -8,6 +8,9 @@ import { ptBrLocale } from "../functions/utils";
 import { useCirurgiaFormik } from "../hooks/useCirurgiaFormik";
 import { IdentificacaoPaciente } from "../components/IdentificacaoPaciente";
 import { IdentificacaoResponsavel } from "../components/IdentificacaoResponsavel";
+import { IdentificacaoEstabelecimento } from "../components/IdentificaoEstabelecimento";
+import { FormCirurgias } from "../components/FormCirurgias";
+import { ComplicacoesCirurgias } from "../components/ComplicacoesCirurgias";
 
 export default function Home() {
     const stepperRef = useRef(null);
@@ -51,9 +54,10 @@ export default function Home() {
                         </StepperPanel>
 
                         <StepperPanel header="Identificação do Estabelecimento">
-                            <div className="flex flex-column h-12rem">
-                                <div className="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">Content III</div>
-                            </div>
+                            <IdentificacaoEstabelecimento
+                                formik={formik}
+                                isFormFieldValid={isFormFieldValid}
+                                getFormErrorMessage={getFormErrorMessage} />
                             <div className="flex pt-4 justify-content-between">
                                 <Button label="Voltar" severity="secondary" icon="pi pi-arrow-left" onClick={() => stepperRef.current.prevCallback()} />
                                 <Button label="Avançar" icon="pi pi-arrow-right" iconPos="right" onClick={() => stepperRef.current.nextCallback()} />
@@ -61,11 +65,11 @@ export default function Home() {
                         </StepperPanel>
 
                         <StepperPanel header="Cirurgias">
-                            <div className="flex flex-column h-12rem">
-                                <div className="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">Content III</div>
-                            </div>
-                            <div className="flex pt-4 justify-content-start">
+                            <FormCirurgias formik={formik} />
+                            <ComplicacoesCirurgias formik={formik} />
+                            <div className="flex pt-4 justify-content-between">
                                 <Button label="Voltar" severity="secondary" icon="pi pi-arrow-left" onClick={() => stepperRef.current.prevCallback()} />
+                                <Button label="Gerar PDF" icon="pi pi-file-pdf" iconPos="right" onClick={() => console.log(formik.values)} />
                             </div>
                         </StepperPanel>
                     </Stepper>

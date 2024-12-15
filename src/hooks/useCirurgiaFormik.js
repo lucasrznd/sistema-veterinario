@@ -10,12 +10,20 @@ export const useCirurgiaFormik = (onSubmitCallback) => {
             pacienteSexo: '',
             responsavelNome: '',
             responsavelNacionalidade: '',
-            responsavelCpf: undefined,
-            responsavelTelefone: undefined,
+            responsavelCpf: '',
+            responsavelTelefone: '',
             responsavelEndereco: '',
-            responsavelCep: undefined,
+            responsavelCep: '',
             responsavelCidade: '',
-            responsavelSexo: ''
+            responsavelSexo: '',
+            estabelecimentoNome: '',
+            tecnicaUtilizada: '',
+            anestesistaNome: '',
+            dataCirurgia: '',
+            nomeCirurgiaoUm: '',
+            nomeCirurgiaoDois: '',
+            nomeCirurgiaoTres: '',
+            cirurgias: []
         },
         validate: (data) => {
             let errors = {};
@@ -70,6 +78,26 @@ export const useCirurgiaFormik = (onSubmitCallback) => {
 
             if (!data.responsavelSexo) {
                 errors.responsavelSexo = "O campo 'Sexo' é obrigatório.";
+            }
+
+            if (!data.estabelecimentoNome) {
+                errors.estabelecimentoNome = "O campo 'Nome do Estabelecimento' é obrigatório.";
+            }
+
+            if (!data.tecnicaUtilizada) {
+                errors.tecnicaUtilizada = "O campo 'Técnica Utilizada' é obrigatório.";
+            }
+
+            if (!data.anestesistaNome) {
+                errors.anestesistaNome = "O campo 'Nome do Anestesista' é obrigatório.";
+            }
+
+            if (!data.dataCirurgia) {
+                errors.dataCirurgia = "O campo 'Data da Cirurgia' é obrigatório.";
+            }
+
+            if (!data.nomeCirurgiaoUm) {
+                errors.nomeCirurgiaoUm = "O campo 'Nome do Cirurgião' é obrigatório.";
             }
 
             return errors;

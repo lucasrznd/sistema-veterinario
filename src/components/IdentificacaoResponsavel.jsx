@@ -1,11 +1,45 @@
-import { Calendar } from "primereact/calendar";
 import { InputText } from "primereact/inputtext";
 import { InputMask } from "primereact/inputmask";
 import { RadioButton } from "primereact/radiobutton";
+import axios from "axios";
+import { Toast } from "primereact/toast";
+import { useRef, useState } from "react";
+import { msgErro } from "./ui/Mensagens";
 
 export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErrorMessage }) {
+    const toast = useRef(null);
+    const [cidadeDisabled, setCidadeDisabled] = useState(true);
+
+    const onChangeCep = async (e) => {
+        formik.setFieldValue('responsavelCep', e.value);
+
+        var cpfLimpo = e.value.replace(/[^\d]/g, "");
+        if (cpfLimpo.length === 8) {
+            try {
+                const response = await axios.get('https://viacep.com.br/ws/' + cpfLimpo + '/json/');
+
+                if (response.data.erro === 'true') {
+                    msgErro(toast, 'CEP inválido.');
+                    setCidadeDisabled(false);
+                    return;
+                }
+
+                formik.setFieldValue('responsavelCidade', response.data.localidade);
+                setCidadeDisabled(true);
+            } catch (error) {
+                msgErro(toast, 'Erro de conexão com o servidor.');
+                setCidadeDisabled(false);
+            }
+        }
+
+        if (formik.values.zipCode === '') {
+            formik.setFieldValue('responsavelCidade', '');
+        }
+    }
+
     return (
         <div className="card p-fluid">
+            <Toast ref={toast} />
             <div className="p-fluid formgrid grid">
                 <div className="field col-12 md:col-6">
                     <label htmlFor='responsavelNome' style={{ marginBottom: '0.5rem' }}>Nome:</label>
@@ -103,7 +137,7 @@ export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErro
                             id="responsavelCep"
                             name="responsavelCep"
                             value={formik.values.responsavelCep}
-                            onChange={formik.handleChange}
+                            onChange={onChangeCep}
                             className={isFormFieldValid('responsavelCep') ? "p-invalid uppercase" : "uppercase"} />
                     </div>
                     {getFormErrorMessage('responsavelCep')}
@@ -118,8 +152,10 @@ export function IdentificacaoResponsavel({ formik, isFormFieldValid, getFormErro
                         <InputText
                             id="responsavelCidade"
                             name="responsavelCidade"
+                            maxLength={80}
                             value={formik.values.responsavelCidade}
                             onChange={formik.handleChange}
+                            disabled={cidadeDisabled}
                             className={isFormFieldValid('responsavelCidade') ? "p-invalid uppercase" : "uppercase"} />
                     </div>
                     {getFormErrorMessage('responsavelCidade')}

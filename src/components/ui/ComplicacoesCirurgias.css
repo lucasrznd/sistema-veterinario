@@ -1,0 +1,13 @@
+.complicacoes-container {
+    margin-top: 20px;
+}
+
+.cirurgia-complicacoes {
+    margin-bottom: 15px;
+}
+
+.complicacoes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
