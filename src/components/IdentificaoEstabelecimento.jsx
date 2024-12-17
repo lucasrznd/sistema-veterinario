@@ -64,7 +64,7 @@ export function IdentificacaoEstabelecimento({ formik, isFormFieldValid, getForm
                         <Calendar
                             id="dataCirurgia"
                             name="dataCirurgia"
-                            showTime hideOnDateTimeSelect
+                            hideOnDateTimeSelect
                             dateFormat="dd/mm/yy" locale="pt-BR"
                             value={formik.values.dataCirurgia}
                             onChange={(e) => formik.setFieldValue('dataCirurgia', new Date(e.value))}
