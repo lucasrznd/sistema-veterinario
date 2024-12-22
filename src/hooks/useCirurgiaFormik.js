@@ -23,7 +23,8 @@ export const useCirurgiaFormik = (onSubmitCallback) => {
             nomeCirurgiaoUm: '',
             nomeCirurgiaoDois: '',
             nomeCirurgiaoTres: '',
-            cirurgias: []
+            cirurgias: [],
+            observacoes: ''
         },
         validate: (data) => {
             let errors = {};

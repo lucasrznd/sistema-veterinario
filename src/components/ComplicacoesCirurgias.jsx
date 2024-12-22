@@ -1,6 +1,7 @@
-import { DataTable } from 'primereact/datatable';
-import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
+import { Column } from 'primereact/column';
+import { DataTable } from 'primereact/datatable';
+import { InputTextarea } from 'primereact/inputtextarea';
 import { TabPanel, TabView } from 'primereact/tabview';
 
 export const ComplicacoesCirurgias = ({ formik }) => {
@@ -26,7 +27,7 @@ export const ComplicacoesCirurgias = ({ formik }) => {
             <TabView>
                 {formik.values.cirurgias.map((cirurgia, index) => (
                     <TabPanel key={cirurgia.titulo} header={cirurgia.titulo}>
-                        <div key={index} style={{ marginBottom: "20px" }}>
+                        <div key={index}>
                             <DataTable value={cirurgia.complicacoes} rows={5} paginator emptyMessage="Sem complicações.">
                                 <Column field="complicacao" header="Complicação" align="center" alignHeader="center" body={(rowData) => rowData} />
                                 <Column
@@ -46,6 +47,18 @@ export const ComplicacoesCirurgias = ({ formik }) => {
                     </TabPanel>
                 ))}
             </TabView>
+
+            <div>
+                <h3>Observações</h3>
+
+                <InputTextarea
+                    id="observacoes"
+                    name="observacoes"
+                    className='w-full'
+                    style={{ height: '100px' }}
+                    value={formik.values.observacoes}
+                    onChange={formik.handleChange} />
+            </div>
         </div>
     );
 };

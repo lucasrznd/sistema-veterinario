@@ -116,6 +116,16 @@ export default function Home() {
             body: cirurgias.map((c) => [c.titulo, c.complicacoes]),
         });
 
+        // Observacoes
+        doc.text("Observações", 14, doc.lastAutoTable.finalY + 10);
+        const observacoesDados = { campo: "Observações", valor: formik.values.observacoes };
+
+        autoTable(doc, {
+            startY: doc.lastAutoTable.finalY + 15,
+            head: [["Campo", "Valor"]],
+            body: [[observacoesDados.campo, observacoesDados.valor]],
+        });
+
         // Adiciona nova página para o termo de responsabilidade
         doc.addPage();
 
