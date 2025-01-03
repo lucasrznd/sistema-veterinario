@@ -23,20 +23,37 @@ export function IdentificacaoEstabelecimento({ formik, isFormFieldValid, getForm
                 </div>
 
                 <div className="field col-12 md:col-6">
-                    <label htmlFor='tecnicaUtilizada' style={{ marginBottom: '0.5rem' }}>Técnica Utilizada:</label>
+                    <label htmlFor='diagnostico' style={{ marginBottom: '0.5rem' }}>Diagnóstico:</label>
                     <div className="p-inputgroup flex-1">
                         <span className="p-inputgroup-addon">
                             <i className="pi pi-building"></i>
                         </span>
                         <InputText
-                            id="tecnicaUtilizada"
-                            name="tecnicaUtilizada"
-                            maxLength={50}
-                            value={formik.values.tecnicaUtilizada}
+                            id="diagnostico"
+                            name="diagnostico"
+                            maxLength={200}
+                            value={formik.values.diagnostico}
                             onChange={formik.handleChange}
-                            className={isFormFieldValid('tecnicaUtilizada') ? "p-invalid uppercase" : "uppercase"} />
+                            className={isFormFieldValid('diagnostico') ? "p-invalid uppercase" : "uppercase"} />
                     </div>
-                    {getFormErrorMessage('tecnicaUtilizada')}
+                    {getFormErrorMessage('diagnostico')}
+                </div>
+
+                <div className="field col-12 md:col-6">
+                    <label htmlFor='cirurgia' style={{ marginBottom: '0.5rem' }}>Cirurgia:</label>
+                    <div className="p-inputgroup flex-1">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-building"></i>
+                        </span>
+                        <InputText
+                            id="cirurgia"
+                            name="cirurgia"
+                            maxLength={50}
+                            value={formik.values.cirurgia}
+                            onChange={formik.handleChange}
+                            className={isFormFieldValid('cirurgia') ? "p-invalid uppercase" : "uppercase"} />
+                    </div>
+                    {getFormErrorMessage('cirurgia')}
                 </div>
 
                 <div className="field col-12 md:col-6">

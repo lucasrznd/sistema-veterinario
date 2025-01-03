@@ -17,7 +17,8 @@ export const useCirurgiaFormik = (onSubmitCallback) => {
             responsavelCidade: '',
             responsavelSexo: '',
             estabelecimentoNome: '',
-            tecnicaUtilizada: '',
+            diagnostico: '',
+            cirurgia: '',
             anestesistaNome: '',
             dataCirurgia: '',
             nomeCirurgiaoUm: '',
@@ -85,8 +86,12 @@ export const useCirurgiaFormik = (onSubmitCallback) => {
                 errors.estabelecimentoNome = "O campo 'Nome do Estabelecimento' é obrigatório.";
             }
 
-            if (!data.tecnicaUtilizada) {
-                errors.tecnicaUtilizada = "O campo 'Técnica Utilizada' é obrigatório.";
+            if (!data.diagnostico) {
+                errors.diagnostico = "O campo 'Diagnóstico' é obrigatório.";
+            }
+
+            if (!data.cirurgia) {
+                errors.cirurgia = "O campo 'Cirurgia' é obrigatório.";
             }
 
             if (!data.anestesistaNome) {

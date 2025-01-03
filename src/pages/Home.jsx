@@ -21,7 +21,7 @@ export default function Home() {
     const toast = useRef(null);
     addLocale('pt-BR', ptBrLocale());
 
-    const formik = useCirurgiaFormik((values) => {
+    const formik = useCirurgiaFormik(() => {
         gerarPDF();
     });
 
@@ -88,7 +88,8 @@ export default function Home() {
         doc.text("Dados do Estabelecimento", 14, doc.lastAutoTable.finalY + 10);
         const estabelecimentoDados = [
             { campo: "Nome do Estabelecimento", valor: formik.values.estabelecimentoNome },
-            { campo: "Técnica Utilizada", valor: formik.values.estabelecimentoNome },
+            { campo: "Diagnóstico", valor: formik.values.diagnostico },
+            { campo: "Cirurgia", valor: formik.values.cirurgia },
             { campo: "Nome do Anestesista", valor: formik.values.anestesistaNome },
             { campo: "Data da Cirurgia", valor: formik.values.dataCirurgia.toLocaleDateString() },
             { campo: "Nome do Cirurgião", valor: formik.values.nomeCirurgiaoUm },
