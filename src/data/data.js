@@ -3,59 +3,79 @@ export const especiesDeAnimais = [{ descricao: 'Canina' }, { descricao: 'Felina'
 export const cirurgias = {
     "Cavidade Abdominal": [
         { titulo: "Abdominocentese", complicacoes: [] },
-        { titulo: "Celiotemia Exploratória", complicacoes: [] },
-        { titulo: "Hérnia Abdominal", complicacoes: [] },
+        { titulo: "Celiotemia (Laparotomia) Exploratória", complicacoes: [] },
+        { titulo: "Esplenectomia", complicacoes: [] },
+        { titulo: "Hérnia Abdominal (Eventração/Evisceração)", complicacoes: [] },
         { titulo: "Hérnia Escrotal", complicacoes: [] },
         { titulo: "Hérnia Inguinal", complicacoes: [] },
         { titulo: "Hérnia Umbilical", complicacoes: [] }
     ],
     "Cavidade Oral": [
         { titulo: "Biópsia", complicacoes: [] },
-        { titulo: "Correção Fissura Palatina", complicacoes: [] },
-        { titulo: "Correção Fissuras Oronasais", complicacoes: [] },
-        { titulo: "Correção Mucocele Salivar", complicacoes: [] },
-        { titulo: "Correção Sialocele", complicacoes: [] },
+        { titulo: "Fenda Palatina", complicacoes: [] },
+        { titulo: "Fístulas Oronasais", complicacoes: [] },
+        { titulo: "Mucocele Salivar/Sialocele", complicacoes: [] },
         { titulo: "Excisão de Tumores Orais", complicacoes: [] },
         { titulo: "Glossectomia", complicacoes: [] },
-        { titulo: "Mandibulectomia Parcial", complicacoes: [] },
-        { titulo: "Mandibulectomia Rostral", complicacoes: [] },
+        { titulo: "Mandibulectomia", complicacoes: [] },
         { titulo: "Marsupialização da Rânula", complicacoes: [] },
-        { titulo: "Maxilectomia Parcial", complicacoes: [] },
+        { titulo: "Maxilectomia", complicacoes: [] },
         { titulo: "Queiloplastia", complicacoes: [] }
     ],
     "Esôfago": [
+        { titulo: "Acalasia Cricofaríngea", complicacoes: [] },
+        { titulo: "Anomalias Dos Aneis Vasculares", complicacoes: [] },
+        { titulo: "Endoscopia", complicacoes: [] },
         { titulo: "Esofagectomia Parcial", complicacoes: [] },
-        { titulo: "Intussuscepção Gastroesofágica", complicacoes: [] }
+        { titulo: "Esofagotomia Cervical", complicacoes: [] },
+        { titulo: "Esofagotomia Torácica", complicacoes: [] },
+        { titulo: "Gastrojejunostomia", complicacoes: [] },
+        { titulo: "Hérnia De Hiato", complicacoes: [] },
+        { titulo: "Intussuscepção Gastroesofágica", complicacoes: [] },
+        { titulo: "Sonda Esofágica", complicacoes: [] }
     ],
     "Estômago": [
         { titulo: "Correção Torção Vôlvulo Gástrica", complicacoes: [] },
-        { titulo: "Gastrojejunostomia", complicacoes: [] }
+        { titulo: "Endoscopia", complicacoes: [] },
+        { titulo: "Gastrectomia Parcial", complicacoes: [] },
+        { titulo: "Gastroduodenostomia (BILLROTH I)", complicacoes: [] },
+        { titulo: "Gastrojejunostomia (BILLROTH II)", complicacoes: [] },
+        { titulo: "Gastrectomia Parcial", complicacoes: [] },
+        { titulo: "Gastrotomia", complicacoes: [] },
+        { titulo: "Piloromiotomia/Piloroplastia", complicacoes: [] },
+        { titulo: "Úlcera Gástrica", complicacoes: [] },
     ],
     "Fígado": [
         { titulo: "Correção Shunt P.Sistêmico", complicacoes: [] },
-        { titulo: "Lobectomia Parcial", complicacoes: [] },
-        { titulo: "Lobectomia Total", complicacoes: [] },
-        { titulo: "Vaso Anômalo", complicacoes: [] }
+        { titulo: "Lobectomia Hepática (Parcial/Total)", complicacoes: [] }
     ],
     "Intestino": [
-        { titulo: "Colectomia", complicacoes: [] },
+        { titulo: "Colectomia (Parcial/Total)", complicacoes: [] },
         { titulo: "Colopexia", complicacoes: [] },
         { titulo: "Colostomia", complicacoes: [] },
         { titulo: "Enterectomia", complicacoes: [] },
-        { titulo: "Eteroromia", complicacoes: [] },
-        { titulo: "Exteropexia", complicacoes: [] },
+        { titulo: "Enterotomia", complicacoes: [] },
         { titulo: "Plicatura Intestinal", complicacoes: [] }
     ],
     "Neurocirurgia": [
-        { titulo: "Cirurgia da Coluna Lombo Sacra", complicacoes: [] },
-        { titulo: "Cirurgia da Coluna Toraco Lombar", complicacoes: [] },
-        { titulo: "Cirurgia de Coluna Cervical", complicacoes: [] },
-        { titulo: "Correção de Fraturas ou Luxações de Coluna Cervical", complicacoes: [] }
+        { titulo: "Craniotomia", complicacoes: [] },
+        { titulo: "Fraturas/Luxações Vertebrais (Cervical/Toracolombar/Lombar/Lombossacro)", complicacoes: [] },
+        { titulo: "Hemilaminectomia Cervical", complicacoes: [] },
+        { titulo: "Hemilaminectomia/Pediculectomia (Toracolombar/Lombar/Lombossacro)", complicacoes: [] },
+        { titulo: "Instabilidade Atlantoaxial", complicacoes: [] },
+        { titulo: "Laminectomia Dorsal (Toracolombar/Lombar/Lombossacro)", complicacoes: [] },
+        { titulo: "Slot Ventral", complicacoes: [] }
     ],
     "Olhos e Anexos": [
-        { titulo: "Conjuntivas", complicacoes: ["Edema", "Eritema", "Infecção", "Inflamação", "Recidiva", "Seroma", "Úlcera"] },
+        { titulo: "Catarata", complicaoes: [] },
+        { titulo: "Ectrópio", complicaoes: [] },
         { titulo: "Enucleação", complicacoes: ["Deiscência", "Edema", "Hemorragia", "Infecção", "Inflamação"] },
-        { titulo: "Palpebrais", complicacoes: ["Ceratoconjuntivite", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Ectóprio", "Edema", "Entrópio", "Eritrema", "Hemorragia", "Recidiva", "Seca", "Secreção", "Triquíase", "Úlcera"] }
+        { titulo: "Entrópio", complicaoes: [] },
+        { titulo: "Flap Conjuntival", complicacoes: ["Edema", "Eritema", "Infecção", "Inflamação", "Recidiva", "Seroma", "Úlcera"] },
+        { titulo: "Flap Terceira Pálpebra", complicacoes: ["Ceratoconjuntivite", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Ectóprio", "Edema", "Entrópio", "Eritrema", "Hemorragia", "Recidiva", "Seca", "Secreção", "Triquíase", "Úlcera"] },
+        { titulo: "Neoplasias Palpebrais", complicaoes: [] },
+        { titulo: "Proptose Bulbar", complicaoes: [] },
+        { titulo: "Sepultamento da Glândula da Terceira Pálpebra", complicaoes: [] }
     ],
     "Orelha": [
         { titulo: "Ablação do Canal Auditivo", complicacoes: [] },
