@@ -83,51 +83,81 @@ export const cirurgias = {
         { titulo: "Pinectomia", complicacoes: [] }
     ],
     "Ortopedia": [
-        { titulo: "Fratura Articulares", complicacoes: [] },
-        { titulo: "Fratura Condilares", complicacoes: [] },
-        { titulo: "Fratura Umerais", complicacoes: [] },
-        { titulo: "Fratura de Carpo e Traso", complicacoes: [] },
-        { titulo: "Fratura de Escápula", complicacoes: [] },
-        { titulo: "Fratura de Maxilar e Mandíbula", complicacoes: [] },
-        { titulo: "Fratura de Pelve", complicacoes: [] },
-        { titulo: "Fratura de Rádio e Ulna", complicacoes: [] },
-        { titulo: "Luxações Sacro Ilíaca", complicacoes: [] }
+        { titulo: "Amputação De Membros Torácico/Pélvico", complicacoes: [] },
+        { titulo: "Displasia Coxofemoral", complicacoes: [] },
+        { titulo: "Fraturas Articulares", complicacoes: [] },
+        { titulo: "Fraturas De Carpo/Metacarpo/Tarso/Metatarso/Falanges", complicacoes: [] },
+        { titulo: "Fraturas De Escápula", complicacoes: [] },
+        { titulo: "Fraturas De Fêmur", complicacoes: [] },
+        { titulo: "Fraturas De Maxilar E Mandíbula", complicacoes: [] },
+        { titulo: "Fraturas De Pelve", complicacoes: [] },
+        { titulo: "Fraturas De Rádio E Ulna", complicacoes: [] },
+        { titulo: "Fraturas De Tíbia", complicacoes: [] },
+        { titulo: "Luxação Coxofemoral", complicacoes: [] },
+        { titulo: "Luxação De Cotovelo (Úmerorádioulnar)", complicacoes: [] },
+        { titulo: "Luxação De Ombro (Escapuloumeral)", complicacoes: [] },
+        { titulo: "Luxação De Patela", complicacoes: [] },
+        { titulo: "Luxação Radiocárpica", complicacoes: [] },
+        { titulo: "Luxação Têmporomandibular", complicacoes: [] },
+        { titulo: "Luxação Tíbiotársica", complicacoes: [] },
+        { titulo: "Ruptura Do Ligamento Cruzado Cranial", complicacoes: [] }
     ],
     "Períneo, Reto e Ânus": [
         { titulo: "Correção Hérnia Perineal", complicacoes: [] },
         { titulo: "Correção Prolapso Retal", complicacoes: [] },
+        { titulo: "Neoplasias Perineais", complicacoes: [] },
         { titulo: "Ressecção Retal", complicacoes: [] },
-        { titulo: "Saculectomia Anal", complicacoes: [] }
+        { titulo: "Saculectomia Glândula Adanal", complicacoes: [] }
     ],
     "Sistema Biliar Extra Hepático": [
         { titulo: "Colecistoduodenostomia", complicacoes: [] },
-        { titulo: "Colecistotomia", complicacoes: [] }
+        { titulo: "Colecistectomia", complicacoes: [] }
     ],
     "Sistema Cardiovascular": [
-        { titulo: "Estenose Pulmonar", complicacoes: [] },
         { titulo: "Neoplasia Cardíaca", complicacoes: [] },
+        { titulo: "Pericardiectomia", complicacoes: [] },
+        { titulo: "Pericardiocentese", complicacoes: [] },
         { titulo: "Persistência Ducto Arterioso", complicacoes: [] },
-        { titulo: "Tetralogia Fallot", complicacoes: [] }
     ],
     "Sistema Endócrino": [
         { titulo: "Adrenalectomia", complicacoes: [] },
-        { titulo: "Pancrectomia Parcial", complicacoes: [] },
-        { titulo: "Tiroidectomia", complicacoes: [] }
+        { titulo: "Pancreactomia Parcial", complicacoes: [] },
+        { titulo: "Tireoidectomia", complicacoes: [] }
     ],
     "Sistema Respiratório Inferior e Parede Torácica": [
-        { titulo: "Corre Ruptura Diafragmática", complicacoes: [] },
-        { titulo: "Lobectomia", complicacoes: [] },
-        { titulo: "Toracotomia", complicacoes: [] },
-        { titulo: "Tumor em Parede Torácica", complicacoes: [] }
+        { titulo: "Dreno Torácico", complicacoes: [] },
+        { titulo: "Lobectomia Pulmonar", complicacoes: [] },
+        { titulo: "Ruptura Diafragmática", complicacoes: [] },
+        { titulo: "Sistema Respiratório e Parede Torácica", complicacoes: [] },
+        { titulo: "Toracocentese", complicacoes: [] },
+        { titulo: "Toracorrafia", complicacoes: [] },
+        { titulo: "Traqueorrafia", complicacoes: [] },
+        { titulo: "Traqueostomia", complicacoes: [] }
+    ],
+    "Sistema Reprodutivo": [
+        { titulo: "Cesariana com Ovariohisterectomia", complicacoes: [] },
+        { titulo: "Cesariana sem Ovariohisterectomia", complicacoes: [] },
+        { titulo: "Mastectomia", complicacoes: [] },
+        { titulo: "Orquiectomia", complicacoes: [] },
+        { titulo: "Ovariohisterectomia", complicacoes: [] },
+        { titulo: "Penectomia", complicacoes: [] },
+        { titulo: "Prolapso de Vagina", complicacoes: [] },
+        { titulo: "Prolapso de Útero", complicacoes: [] },
+        { titulo: "Vulvoplastia", complicacoes: [] }
     ],
     "Sistema Urinário": [
         { titulo: "Cistectomia", complicacoes: [] },
         { titulo: "Cistotomia", complicacoes: [] },
         { titulo: "Correção Prolapso Uretral", complicacoes: [] },
+        { titulo: "Desvios Urinários (Duplo J E Sub)", complicacoes: [] },
         { titulo: "Nefrectomia", complicacoes: [] },
         { titulo: "Nefrotomia", complicacoes: [] },
         { titulo: "Pielolitotomia", complicacoes: [] },
         { titulo: "Ureterotomia", complicacoes: [] },
         { titulo: "Uretrostomia", complicacoes: [] }
+    ],
+    "Outras Cirurgias": [
+        { titulo: "Linfadenectomia", complicacoes: [] },
+        { titulo: "Sutura de Lacerações Cutâneas", complicacoes: [] }
     ]
 };
