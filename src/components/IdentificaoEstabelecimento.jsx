@@ -83,6 +83,7 @@ export function IdentificacaoEstabelecimento({ formik, isFormFieldValid, getForm
                             name="dataCirurgia"
                             hideOnDateTimeSelect
                             dateFormat="dd/mm/yy" locale="pt-BR"
+                            showButtonBar
                             value={formik.values.dataCirurgia}
                             onChange={(e) => formik.setFieldValue('dataCirurgia', new Date(e.value))}
                             className={isFormFieldValid('dataCirurgia') ? "p-invalid uppercase" : "uppercase"} />

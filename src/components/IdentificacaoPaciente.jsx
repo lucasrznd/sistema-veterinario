@@ -66,6 +66,7 @@ export function IdentificacaoPaciente({ formik, isFormFieldValid, getFormErrorMe
                             id="pacienteDataNascimento"
                             name="pacienteDataNascimento"
                             dateFormat="dd/mm/yy" locale="pt-BR"
+                            showButtonBar
                             value={formik.values.pacienteDataNascimento}
                             onChange={(e) => formik.setFieldValue('pacienteDataNascimento', new Date(e.value))}
                             className={isFormFieldValid('pacienteDataNascimento') ? "p-invalid uppercase" : "uppercase"} />
