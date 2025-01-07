@@ -3,12 +3,12 @@ export const especiesDeAnimais = [{ descricao: 'Canina' }, { descricao: 'Felina'
 export const cirurgias = {
     "Cavidade Abdominal": [
         { titulo: "Abdominocentese", complicacoes: [] },
-        { titulo: "Celiotemia (Laparotomia) Exploratória", complicacoes: [] },
+        { titulo: "Celiotemia (Laparotomia) Exploratória", complicacoes: ["Contaminação", "Deiscência", "Infecção", "Óbito"] },
         { titulo: "Esplenectomia", complicacoes: [] },
-        { titulo: "Hérnia Abdominal (Eventração/Evisceração)", complicacoes: [] },
-        { titulo: "Hérnia Escrotal", complicacoes: [] },
-        { titulo: "Hérnia Inguinal", complicacoes: [] },
-        { titulo: "Hérnia Umbilical", complicacoes: [] }
+        { titulo: "Hérnia Abdominal (Eventração/Evisceração)", complicacoes: ["Contaminação", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma"] },
+        { titulo: "Hérnia Escrotal", complicacoes: ["Contaminação", "Disúria", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma", "Teresmo"] },
+        { titulo: "Hérnia Inguinal", complicacoes: ["Contaminação", "Disúria", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma", "Teresmo"] },
+        { titulo: "Hérnia Umbilical", complicacoes: ["Contaminação", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma"] }
     ],
     "Cavidade Oral": [
         { titulo: "Biópsia", complicacoes: [] },
@@ -26,12 +26,12 @@ export const cirurgias = {
         { titulo: "Acalasia Cricofaríngea", complicacoes: [] },
         { titulo: "Anomalias Dos Aneis Vasculares", complicacoes: [] },
         { titulo: "Endoscopia", complicacoes: [] },
-        { titulo: "Esofagectomia Parcial", complicacoes: [] },
+        { titulo: "Esofagectomia Parcial", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Esofagotomia Cervical", complicacoes: [] },
         { titulo: "Esofagotomia Torácica", complicacoes: [] },
         { titulo: "Gastrojejunostomia", complicacoes: [] },
         { titulo: "Hérnia De Hiato", complicacoes: [] },
-        { titulo: "Intussuscepção Gastroesofágica", complicacoes: [] },
+        { titulo: "Intussuscepção Gastroesofágica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Sonda Esofágica", complicacoes: [] }
     ],
     "Estômago": [
@@ -78,9 +78,9 @@ export const cirurgias = {
         { titulo: "Sepultamento da Glândula da Terceira Pálpebra", complicaoes: [] }
     ],
     "Orelha": [
-        { titulo: "Ablação do Canal Auditivo", complicacoes: [] },
-        { titulo: "Otohematoma", complicacoes: [] },
-        { titulo: "Pinectomia", complicacoes: [] }
+        { titulo: "Ablação do Canal Auditivo", complicacoes: ["Alteração Estética", "Deiscência", "Edema", "Hematoma", "Infecção", "Necrose", "Recidiva Tumoral", "Seroma"] },
+        { titulo: "Otohematoma", complicacoes: ["Edema", "Retração Cicatricial"] },
+        { titulo: "Pinectomia", complicacoes: ["Alteração Estética", "Deiscência", "Edema", "Hematoma", "Infecção", "Necrose", "Recidiva Tumoral", "Seroma"] }
     ],
     "Ortopedia": [
         { titulo: "Amputação De Membros Torácico/Pélvico", complicacoes: [] },
