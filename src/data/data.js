@@ -145,6 +145,11 @@ export const cirurgias = {
         { titulo: "Prolapso de Útero", complicacoes: [] },
         { titulo: "Vulvoplastia", complicacoes: [] }
     ],
+    "Sistema Tegumentar": [
+        { titulo: "Cirurgias Reconstrutivas", complicacoes: ["Congestão Tecidual", "Deiscência", "Hematomas", "Infecção", "Isquemia", "Necrose", "Seromas", "Tensão"] },
+        { titulo: "Enxerto", complicacoes: ["Excesso de Movimentação de Enxerto", "Hematomas", "Infecções", "Isquemia", "Necrose Tecidual", "Seromas"] },
+        { titulo: "Nodulectomia", complicacoes: ["Deiscência", "Hematoma", "Infecção", "Necrose", "Seroma", "Tensão"] }
+    ],
     "Sistema Urinário": [
         { titulo: "Cistectomia", complicacoes: [] },
         { titulo: "Cistotomia", complicacoes: [] },
