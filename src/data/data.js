@@ -25,12 +25,12 @@ export const cirurgias = {
     "Esôfago": [
         { titulo: "Acalasia Cricofaríngea", complicacoes: ["Pneumonia Aspirativa", "Seroma"] },
         { titulo: "Anomalias Dos Aneis Vasculares", complicacoes: ["Bandas Fibróticas Persistentes", "Hemorragia", "Perfuração Esofágica", "Regurgitação Persistente", "Óbito"] },
-        { titulo: "Endoscopia", complicacoes: [] },
+        { titulo: "Endoscopia", complicacoes: ["Disfunção Neurológica do Esfíncter", "Distensão Gástrica", "Impossibilidade da Remoção do Corpo Estranho", "Laceração", "Perfuração"] },
         { titulo: "Esofagectomia Parcial", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Esofagotomia Cervical", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Esofagotomia Torácica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Gastrojejunostomia", complicacoes: [] },
-        { titulo: "Hérnia De Hiato", complicacoes: [] },
+        { titulo: "Hérnia De Hiato", complicacoes: ["Anorexia", "Recidiva", "Ulceração no Local da Anastomose", "Vômito"] },
         { titulo: "Intussuscepção Gastroesofágica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Sonda Esofágica", complicacoes: [] }
     ],
@@ -74,7 +74,7 @@ export const cirurgias = {
         { titulo: "Flap Conjuntival", complicacoes: ["Edema", "Eritema", "Infecção", "Inflamação", "Recidiva", "Seroma", "Úlcera"] },
         { titulo: "Flap Terceira Pálpebra", complicacoes: ["Ceratoconjuntivite", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Ectóprio", "Edema", "Entrópio", "Eritrema", "Hemorragia", "Recidiva", "Seca", "Secreção", "Triquíase", "Úlcera"] },
         { titulo: "Neoplasias Palpebrais", complicaoes: ["Ceratoconjuntivite Seca", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Edema", "Eritema", "Hemorragia", "Recidiva", "Secreção", "Úlcera"] },
-        { titulo: "Proptose Bulbar", complicaoes: [] },
+        { titulo: "Proptose Bulbar", complicaoes: ["Enucleação", "Incapacidade de Reposicionamento"] },
         { titulo: "Sepultamento da Glândula da Terceira Pálpebra", complicaoes: ["Deiscência", "Edema", "Eritema", "Infecção", "Inflamação", "Recidiva", "Seroma", "Úlcera"] }
     ],
     "Orelha": [
