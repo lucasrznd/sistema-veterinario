@@ -3,7 +3,7 @@ export const especiesDeAnimais = [{ descricao: 'Canina' }, { descricao: 'Felina'
 export const cirurgias = {
     "Cavidade Abdominal": [
         { titulo: "Abdominocentese", complicacoes: ["Hemorragia", "Hipoperfusão", "Hipotensão", "Lesão de Órgãos", "Óbito"] },
-        { titulo: "Celiotemia (Laparotomia) Exploratória", complicacoes: ["Contaminação", "Deiscência", "Infecção", "Óbito"] },
+        { titulo: "Celiotomia (Laparotomia) Exploratória", complicacoes: ["Contaminação", "Deiscência", "Infecção", "Óbito"] },
         { titulo: "Esplenectomia", complicacoes: ["Abcesso", "Alterações Hematológicas", "Arritmias", "Coagulação Intravascular Disseminada (CID)", "Hemorragia", "Infecções", "Necrose", "Septicemia", "Óbito"] },
         { titulo: "Hérnia Abdominal (Eventração/Evisceração)", complicacoes: ["Contaminação", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma"] },
         { titulo: "Hérnia Escrotal", complicacoes: ["Contaminação", "Disúria", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma", "Teresmo"] },
@@ -29,24 +29,24 @@ export const cirurgias = {
         { titulo: "Esofagectomia Parcial", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Esofagotomia Cervical", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Esofagotomia Torácica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
-        { titulo: "Gastrojejunostomia", complicacoes: [] },
         { titulo: "Hérnia De Hiato", complicacoes: ["Anorexia", "Recidiva", "Ulceração no Local da Anastomose", "Vômito"] },
         { titulo: "Intussuscepção Gastroesofágica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Sonda Esofágica", complicacoes: [] }
     ],
     "Estômago": [
-        { titulo: "Correção Torção Vôlvulo Gástrica", complicacoes: [] },
+        { titulo: "Torção Vôlvulo Gástrica", complicacoes: [] },
         { titulo: "Endoscopia", complicacoes: [] },
         { titulo: "Gastrectomia Parcial", complicacoes: [] },
         { titulo: "Gastroduodenostomia (BILLROTH I)", complicacoes: [] },
         { titulo: "Gastrojejunostomia (BILLROTH II)", complicacoes: [] },
         { titulo: "Gastrectomia Parcial", complicacoes: [] },
         { titulo: "Gastrotomia", complicacoes: [] },
+        { titulo: "Gastrostomia (Sonda Gástrica)", complicacoes: [] },
         { titulo: "Piloromiotomia/Piloroplastia", complicacoes: [] },
         { titulo: "Úlcera Gástrica", complicacoes: [] },
     ],
     "Fígado": [
-        { titulo: "Correção Shunt P.Sistêmico", complicacoes: [] },
+        { titulo: "Shunt P.Sistêmico", complicacoes: [] },
         { titulo: "Lobectomia Hepática (Parcial/Total)", complicacoes: [] }
     ],
     "Intestino": [
@@ -83,28 +83,30 @@ export const cirurgias = {
         { titulo: "Pinectomia", complicacoes: ["Alteração Estética", "Deiscência", "Edema", "Hematoma", "Infecção", "Necrose", "Recidiva Tumoral", "Seroma"] }
     ],
     "Ortopedia": [
-        { titulo: "Amputação De Membros Torácico/Pélvico", complicacoes: [] },
+        { titulo: "Amputação de Membros Torácico/Pélvico", complicacoes: [] },
         { titulo: "Displasia Coxofemoral", complicacoes: [] },
         { titulo: "Fraturas Articulares", complicacoes: [] },
-        { titulo: "Fraturas De Carpo/Metacarpo/Tarso/Metatarso/Falanges", complicacoes: [] },
-        { titulo: "Fraturas De Escápula", complicacoes: [] },
-        { titulo: "Fraturas De Fêmur", complicacoes: [] },
-        { titulo: "Fraturas De Maxilar E Mandíbula", complicacoes: [] },
-        { titulo: "Fraturas De Pelve", complicacoes: [] },
-        { titulo: "Fraturas De Rádio E Ulna", complicacoes: [] },
-        { titulo: "Fraturas De Tíbia", complicacoes: [] },
+        { titulo: "Fraturas de Carpo/Metacarpo/Tarso/Metatarso/Falanges", complicacoes: [] },
+        { titulo: "Fraturas de Escápula", complicacoes: [] },
+        { titulo: "Fraturas de Fêmur", complicacoes: [] },
+        { titulo: "Fraturas de Maxilar E Mandíbula", complicacoes: [] },
+        { titulo: "Fraturas de Pelve", complicacoes: [] },
+        { titulo: "Fraturas de Rádio E Ulna", complicacoes: [] },
+        { titulo: "Fraturas de Tíbia", complicacoes: [] },
+        { titulo: "Fraturas de Úmero", complicacoes: [] },
         { titulo: "Luxação Coxofemoral", complicacoes: [] },
-        { titulo: "Luxação De Cotovelo (Úmerorádioulnar)", complicacoes: [] },
-        { titulo: "Luxação De Ombro (Escapuloumeral)", complicacoes: [] },
-        { titulo: "Luxação De Patela", complicacoes: [] },
+        { titulo: "Luxação de Cotovelo (Úmerorádioulnar)", complicacoes: [] },
+        { titulo: "Luxação de Ombro (Escapuloumeral)", complicacoes: [] },
+        { titulo: "Luxação de Patela", complicacoes: [] },
         { titulo: "Luxação Radiocárpica", complicacoes: [] },
+        { titulo: "Luxação Sacroilíaca", complicacoes: [] },
         { titulo: "Luxação Têmporomandibular", complicacoes: [] },
         { titulo: "Luxação Tíbiotársica", complicacoes: [] },
         { titulo: "Ruptura Do Ligamento Cruzado Cranial", complicacoes: [] }
     ],
     "Períneo, Reto e Ânus": [
-        { titulo: "Correção Hérnia Perineal", complicacoes: [] },
-        { titulo: "Correção Prolapso Retal", complicacoes: [] },
+        { titulo: "Hérnia Perineal", complicacoes: [] },
+        { titulo: "Prolapso Retal", complicacoes: [] },
         { titulo: "Neoplasias Perineais", complicacoes: [] },
         { titulo: "Ressecção Retal", complicacoes: [] },
         { titulo: "Saculectomia Glândula Adanal", complicacoes: [] }
@@ -124,11 +126,17 @@ export const cirurgias = {
         { titulo: "Pancreactomia Parcial", complicacoes: [] },
         { titulo: "Tireoidectomia", complicacoes: [] }
     ],
-    "Sistema Respiratório Inferior e Parede Torácica": [
+    "Sistema Respiratório e Parede Torácica": [
+        { titulo: "Colapso de Traqueia", complicacoes: [] },
         { titulo: "Dreno Torácico", complicacoes: [] },
+        { titulo: "Estenose de Narina", complicacoes: [] },
+        { titulo: "Eversão de Sacos Laríngeos", complicacoes: [] },
         { titulo: "Lobectomia Pulmonar", complicacoes: [] },
+        { titulo: "Neoplasias em Laringe e Traqueia", complicacoes: [] },
+        { titulo: "Neoplasias em Parede Torácica", complicacoes: [] },
+        { titulo: "Paralisia de Laringe", complicacoes: [] },
+        { titulo: "Prolongamento de Palato Mole", complicacoes: [] },
         { titulo: "Ruptura Diafragmática", complicacoes: [] },
-        { titulo: "Sistema Respiratório e Parede Torácica", complicacoes: [] },
         { titulo: "Toracocentese", complicacoes: [] },
         { titulo: "Toracorrafia", complicacoes: [] },
         { titulo: "Traqueorrafia", complicacoes: [] },
@@ -137,13 +145,14 @@ export const cirurgias = {
     "Sistema Reprodutivo": [
         { titulo: "Cesariana com Ovariohisterectomia", complicacoes: [] },
         { titulo: "Cesariana sem Ovariohisterectomia", complicacoes: [] },
+        { titulo: "Episioplastia", complicacoes: [] },
+        { titulo: "Episiotomia", complicacoes: [] },
         { titulo: "Mastectomia", complicacoes: [] },
         { titulo: "Orquiectomia", complicacoes: [] },
         { titulo: "Ovariohisterectomia", complicacoes: [] },
         { titulo: "Penectomia", complicacoes: [] },
         { titulo: "Prolapso de Vagina", complicacoes: [] },
-        { titulo: "Prolapso de Útero", complicacoes: [] },
-        { titulo: "Vulvoplastia", complicacoes: [] }
+        { titulo: "Prolapso de Útero", complicacoes: [] }
     ],
     "Sistema Tegumentar": [
         { titulo: "Cirurgias Reconstrutivas", complicacoes: ["Congestão Tecidual", "Deiscência", "Hematomas", "Infecção", "Isquemia", "Necrose", "Seromas", "Tensão"] },
@@ -153,7 +162,8 @@ export const cirurgias = {
     "Sistema Urinário": [
         { titulo: "Cistectomia", complicacoes: [] },
         { titulo: "Cistotomia", complicacoes: [] },
-        { titulo: "Correção Prolapso Uretral", complicacoes: [] },
+        { titulo: "Cistostomia", complicacoes: [] },
+        { titulo: "Prolapso Uretral", complicacoes: [] },
         { titulo: "Desvios Urinários (Duplo J E Sub)", complicacoes: [] },
         { titulo: "Nefrectomia", complicacoes: [] },
         { titulo: "Nefrotomia", complicacoes: [] },
