@@ -31,7 +31,7 @@ export const cirurgias = {
         { titulo: "Esofagotomia Torácica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Hérnia De Hiato", complicacoes: ["Anorexia", "Recidiva", "Ulceração no Local da Anastomose", "Vômito"] },
         { titulo: "Intussuscepção Gastroesofágica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
-        { titulo: "Sonda Esofágica", complicacoes: [] }
+        { titulo: "Sonda Esofágica", complicacoes: ["Celulite Cervical", "Divertículo Esofágico", "Esofagite", "Estenose Esofágica", "Infecção", "Necessidade de Retirada", "Retirada pelo Paciente", "Vômito"] }
     ],
     "Estômago": [
         { titulo: "Torção Vôlvulo Gástrica", complicacoes: [] },
