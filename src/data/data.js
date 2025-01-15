@@ -41,7 +41,7 @@ export const cirurgias = {
         { titulo: "Gastrojejunostomia (BILLROTH II)", complicacoes: [] },
         { titulo: "Gastrectomia Parcial", complicacoes: [] },
         { titulo: "Gastrotomia", complicacoes: [] },
-        { titulo: "Gastrostomia (Sonda Gástrica)", complicacoes: [] },
+        { titulo: "Gastrostomia (Sonda Gástrica)", complicacoes: ["Alterações Metabólicas", "Distensão Abdominal", "Dor Abdominal", "Extravasamento do Conteúdo Gástrico", "Extração", "Infecção da Ferida", "Migração", "Obstrução do Tubo", "Regurgitação", "Vômito"] },
         { titulo: "Piloromiotomia/Piloroplastia", complicacoes: [] },
         { titulo: "Úlcera Gástrica", complicacoes: [] },
     ],
