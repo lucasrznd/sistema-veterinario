@@ -67,15 +67,15 @@ export const cirurgias = {
         { titulo: "Slot Ventral", complicacoes: [] }
     ],
     "Olhos e Anexos": [
-        { titulo: "Catarata", complicaoes: ["Deslocamento de Retina", "Edema Corneano", "Endoftalmite", "Hemorragia", "Hiperemia Ocular", "Hipertensão Intraocular", "Lesões Corneanas", "Opacificação da Cápsula", "Retinopatia", "Sinéquia", "Uveíte"] },
-        { titulo: "Ectrópio", complicaoes: ["Ceratoconjuntivite Seca", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Edema", "Eritema", "Hemorragia", "Infecção", "Recidiva", "Secreção", "Úlcera"] },
+        { titulo: "Catarata", complicacoes: ["Deslocamento de Retina", "Edema Corneano", "Endoftalmite", "Hemorragia", "Hiperemia Ocular", "Hipertensão Intraocular", "Lesões Corneanas", "Opacificação da Cápsula", "Retinopatia", "Sinéquia", "Uveíte"] },
+        { titulo: "Ectrópio", complicacoes: ["Ceratoconjuntivite Seca", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Edema", "Eritema", "Hemorragia", "Infecção", "Recidiva", "Secreção", "Úlcera"] },
         { titulo: "Enucleação", complicacoes: ["Deiscência", "Edema", "Hemorragia", "Infecção", "Inflamação"] },
-        { titulo: "Entrópio", complicaoes: ["Ceratoconjuntivite Seca", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Edema", "Eritema", "Hemorragia", "Infecção", "Recidiva", "Secreção", "Úlcera"] },
+        { titulo: "Entrópio", complicacoes: ["Ceratoconjuntivite Seca", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Edema", "Eritema", "Hemorragia", "Infecção", "Recidiva", "Secreção", "Úlcera"] },
         { titulo: "Flap Conjuntival", complicacoes: ["Edema", "Eritema", "Infecção", "Inflamação", "Recidiva", "Seroma", "Úlcera"] },
         { titulo: "Flap Terceira Pálpebra", complicacoes: ["Ceratoconjuntivite", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Ectóprio", "Edema", "Entrópio", "Eritrema", "Hemorragia", "Recidiva", "Seca", "Secreção", "Triquíase", "Úlcera"] },
-        { titulo: "Neoplasias Palpebrais", complicaoes: ["Ceratoconjuntivite Seca", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Edema", "Eritema", "Hemorragia", "Recidiva", "Secreção", "Úlcera"] },
-        { titulo: "Proptose Bulbar", complicaoes: ["Enucleação", "Incapacidade de Reposicionamento"] },
-        { titulo: "Sepultamento da Glândula da Terceira Pálpebra", complicaoes: ["Deiscência", "Edema", "Eritema", "Infecção", "Inflamação", "Recidiva", "Seroma", "Úlcera"] }
+        { titulo: "Neoplasias Palpebrais", complicacoes: ["Ceratoconjuntivite Seca", "Deiscência", "Desalinhamento Palpebral", "Despigmentação", "Edema", "Eritema", "Hemorragia", "Recidiva", "Secreção", "Úlcera"] },
+        { titulo: "Proptose Bulbar", complicacoes: ["Enucleação", "Incapacidade de Reposicionamento"] },
+        { titulo: "Sepultamento da Glândula da Terceira Pálpebra", complicacoes: ["Deiscência", "Edema", "Eritema", "Infecção", "Inflamação", "Recidiva", "Seroma", "Úlcera"] }
     ],
     "Orelha": [
         { titulo: "Ablação do Canal Auditivo", complicacoes: ["Alteração Estética", "Deiscência", "Edema", "Hematoma", "Infecção", "Necrose", "Recidiva Tumoral", "Seroma"] },
