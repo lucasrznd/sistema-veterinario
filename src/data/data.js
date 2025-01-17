@@ -34,7 +34,7 @@ export const cirurgias = {
         { titulo: "Sonda Esofágica", complicacoes: ["Celulite Cervical", "Divertículo Esofágico", "Esofagite", "Estenose Esofágica", "Infecção", "Necessidade de Retirada", "Retirada pelo Paciente", "Vômito"] }
     ],
     "Estômago": [
-        { titulo: "Torção Vôlvulo Gástrica", complicacoes: [] },
+        { titulo: "Torção Vôlvulo Gástrica", complicacoes: ["Anemia", "Arritmia", "Coagulação Intravascular Disseminada", "Esplenectomia", "Hepatopatia", "Hipoproteinemia", "Infecção", "Necrose Estômago", "Perfuração Metabólica", "Síndrome da Resposta Inflamatória Sistêmica", "Vasculite"] },
         { titulo: "Endoscopia", complicacoes: [] },
         { titulo: "Gastrectomia Parcial", complicacoes: [] },
         { titulo: "Gastroduodenostomia (BILLROTH I)", complicacoes: [] },
