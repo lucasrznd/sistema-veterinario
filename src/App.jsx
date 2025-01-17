@@ -4,12 +4,14 @@ import 'primeicons/primeicons.css'; //icons
 import 'primeflex/primeflex.css'; // flex
 import Home from "./pages/Home";
 import Layout from "./components/layout/Layout";
+import ManutencaoPage from './pages/Manutencao';
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+    <ManutencaoPage />
+    // <Layout>
+    //   <Home />
+    // </Layout>
   )
 }
 
