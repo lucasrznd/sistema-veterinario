@@ -51,7 +51,7 @@ export default function Home() {
         doc.text("Termo de Esclarecimento e Ciência sobre o Procedimento Cirúrgico", 14, 20);
 
         // Dados do Paciente
-        doc.text("Dados do Paciente", 14, doc.lastAutoTable.finalY + 10);
+        doc.text("Dados do Paciente", 14, 40);
         const pacienteDados = [
             { campo: "Nome do Paciente", valor: formik.values.pacienteNome },
             { campo: "Espécie", valor: formik.values.pacienteEspecie },
@@ -61,7 +61,7 @@ export default function Home() {
         ];
 
         autoTable(doc, {
-            startY: 30,
+            startY: 45,
             body: pacienteDados.map((item) => [item.campo, item.valor || "N/A"]),
         });
 
