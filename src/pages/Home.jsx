@@ -61,7 +61,6 @@ export default function Home() {
 
         autoTable(doc, {
             startY: 30,
-            head: [["Campo", "Valor"]],
             body: pacienteDados.map((item) => [item.campo, item.valor || "N/A"]),
         });
 
@@ -80,7 +79,6 @@ export default function Home() {
 
         autoTable(doc, {
             startY: doc.lastAutoTable.finalY + 15,
-            head: [["Campo", "Valor"]],
             body: responsavelDados.map((item) => [item.campo, item.valor || "N/A"]),
         });
 
@@ -97,7 +95,6 @@ export default function Home() {
 
         autoTable(doc, {
             startY: doc.lastAutoTable.finalY + 15,
-            head: [["Campo", "Valor"]],
             body: estabelecimentoDados.map((item) => [item.campo, item.valor || "N/A"]),
         });
 
@@ -119,12 +116,11 @@ export default function Home() {
 
         // Observacoes
         doc.text("Observações", 14, doc.lastAutoTable.finalY + 10);
-        const observacoesDados = { campo: "Observações", valor: formik.values.observacoes };
+        const observacoesDados = { valor: formik.values.observacoes };
 
         autoTable(doc, {
             startY: doc.lastAutoTable.finalY + 15,
-            head: [["Campo", "Valor"]],
-            body: [[observacoesDados.campo, observacoesDados.valor]],
+            body: [[observacoesDados.valor]],
         });
 
         // Adiciona nova página para o termo de responsabilidade
