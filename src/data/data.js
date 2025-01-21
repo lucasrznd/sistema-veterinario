@@ -4,7 +4,6 @@ export const cirurgias = {
     "Cavidade Abdominal": [
         { titulo: "Abdominocentese", complicacoes: ["Hemorragia", "Hipoperfusão", "Hipotensão", "Lesão de Órgãos", "Óbito"] },
         { titulo: "Celiotomia (Laparotomia) Exploratória", complicacoes: ["Contaminação", "Deiscência", "Infecção", "Óbito"] },
-        { titulo: "Esplenectomia", complicacoes: ["Abcesso", "Alterações Hematológicas", "Arritmias", "Coagulação Intravascular Disseminada (CID)", "Hemorragia", "Infecções", "Necrose", "Septicemia", "Óbito"] },
         { titulo: "Hérnia Abdominal (Eventração/Evisceração)", complicacoes: ["Contaminação", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma"] },
         { titulo: "Hérnia Escrotal", complicacoes: ["Contaminação", "Disúria", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma", "Teresmo"] },
         { titulo: "Hérnia Inguinal", complicacoes: ["Contaminação", "Disúria", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma", "Teresmo"] },
@@ -36,10 +35,10 @@ export const cirurgias = {
     "Estômago": [
         { titulo: "Torção Vôlvulo Gástrica", complicacoes: ["Anemia", "Arritmia", "Coagulação Intravascular Disseminada", "Esplenectomia", "Hepatopatia", "Hipoproteinemia", "Infecção", "Necrose Estômago", "Perfuração Metabólica", "Síndrome da Resposta Inflamatória Sistêmica", "Vasculite"] },
         { titulo: "Endoscopia", complicacoes: [] },
-        { titulo: "Gastrectomia Parcial", complicacoes: [] },
-        { titulo: "Gastroduodenostomia (BILLROTH I)", complicacoes: [] },
-        { titulo: "Gastrojejunostomia (BILLROTH II)", complicacoes: [] },
-        { titulo: "Gastrectomia Parcial", complicacoes: [] },
+        { titulo: "Gastrectomia Parcial", complicacoes: ["Anorexia", "Deficiência Nutricional", "Gastrite", "Hemorragia", "Pancreatite", "Peritonite", "Recidiva", "Ulceração", "Vômito", "Óbito"] },
+        { titulo: "Gastroduodenostomia (BILLROTH I)", complicacoes: ["Alteração Neurológica", "Anorexia", "Choque Hipovolêmico", "Deiscência", "Exócrina", "Granuloma", "Hepatite", "Insuficiência Pancreática", "Insuficiência Pancreática Endócrina", "Linfoadenomegalia", "Obstrução Biliar", "Pancreatite", "Pneumonia Aspirativa", "Recidiva", "Recidiva", "Refluxo Duodenogástrico", "Regurgitação", "Sepse", "Vômito", "Óbito"] },
+        { titulo: "Gastrojejunostomia (BILLROTH II)", complicacoes: ["Alteração Neurológica", "Anorexia", "Choque Hipovolêmico", "Deiscência", "Exócrina", "Granuloma", "Hepatite", "Insuficiência Pancreática", "Insuficiência Pancreática Endócrina", "Linfoadenomegalia", "Obstrução Biliar", "Pancreatite", "Pneumonia Aspirativa", "Recidiva", "Recidiva", "Refluxo Duodenogástrico", "Regurgitação", "Sepse", "Vômito", "Óbito"] },
+        { titulo: "Gastropexia", complicacoes: ["Anorexia", "Comprometimento da Sonda", "Diminuição de Motilidade", "Peritonite", "Recorrência", "Vômito", "Úlcera"] },
         { titulo: "Gastrotomia", complicacoes: [] },
         { titulo: "Gastrostomia (Sonda Gástrica)", complicacoes: ["Alterações Metabólicas", "Distensão Abdominal", "Dor Abdominal", "Extravasamento do Conteúdo Gástrico", "Extração", "Infecção da Ferida", "Migração", "Obstrução do Tubo", "Regurgitação", "Vômito"] },
         { titulo: "Piloromiotomia/Piloroplastia", complicacoes: [] },
@@ -126,6 +125,10 @@ export const cirurgias = {
         { titulo: "Pancreactomia Parcial", complicacoes: [] },
         { titulo: "Tireoidectomia", complicacoes: [] }
     ],
+    "Sistema Hemolinfático": [
+        { titulo: "Esplenectomia", complicacoes: ["Abcesso", "Alterações Hematológicas", "Arritmias", "Coagulação Intravascular Disseminada (CID)", "Hemorragia", "Infecções", "Necrose", "Septicemia", "Óbito"] },
+        { titulo: "Linfadenectomia", complicacoes: [] },
+    ],
     "Sistema Respiratório e Parede Torácica": [
         { titulo: "Colapso de Traqueia", complicacoes: [] },
         { titulo: "Dreno Torácico", complicacoes: [] },
@@ -157,7 +160,8 @@ export const cirurgias = {
     "Sistema Tegumentar": [
         { titulo: "Cirurgias Reconstrutivas", complicacoes: ["Congestão Tecidual", "Deiscência", "Hematomas", "Infecção", "Isquemia", "Necrose", "Seromas", "Tensão"] },
         { titulo: "Enxerto", complicacoes: ["Excesso de Movimentação de Enxerto", "Hematomas", "Infecções", "Isquemia", "Necrose Tecidual", "Seromas"] },
-        { titulo: "Nodulectomia", complicacoes: ["Deiscência", "Hematoma", "Infecção", "Necrose", "Seroma", "Tensão"] }
+        { titulo: "Nodulectomia", complicacoes: ["Deiscência", "Hematoma", "Infecção", "Necrose", "Seroma", "Tensão"] },
+        { titulo: "Sutura de Lacerações Cutâneas", complicacoes: [] }
     ],
     "Sistema Urinário": [
         { titulo: "Cistectomia", complicacoes: [] },
@@ -170,9 +174,5 @@ export const cirurgias = {
         { titulo: "Pielolitotomia", complicacoes: [] },
         { titulo: "Ureterotomia", complicacoes: [] },
         { titulo: "Uretrostomia", complicacoes: [] }
-    ],
-    "Outras Cirurgias": [
-        { titulo: "Linfadenectomia", complicacoes: [] },
-        { titulo: "Sutura de Lacerações Cutâneas", complicacoes: [] }
     ]
 };
