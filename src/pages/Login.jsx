@@ -17,7 +17,7 @@ const LoginPage = () => {
     // Credenciais hard-coded para teste
     const VALID_CREDENTIALS = {
         username: 'admin',
-        password: 'senha123'
+        password: 'mestrado2022vetconsent'
     };
 
     const handleLogin = (e) => {
