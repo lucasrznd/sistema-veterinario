@@ -41,7 +41,7 @@ export const cirurgias = {
         { titulo: "Gastropexia", complicacoes: ["Anorexia", "Comprometimento da Sonda", "Diminuição de Motilidade", "Peritonite", "Recorrência", "Vômito", "Úlcera"] },
         { titulo: "Gastrotomia", complicacoes: [] },
         { titulo: "Gastrostomia (Sonda Gástrica)", complicacoes: ["Alterações Metabólicas", "Distensão Abdominal", "Dor Abdominal", "Extravasamento do Conteúdo Gástrico", "Extração", "Infecção da Ferida", "Migração", "Obstrução do Tubo", "Regurgitação", "Vômito"] },
-        { titulo: "Piloromiotomia/Piloroplastia", complicacoes: [] },
+        { titulo: "Piloromiotomia/Piloroplastia", complicacoes: ["Anorexia", "Pancreatite", "Perfuração", "Peritonite", "Retardo do Esvaziamento Gástrico", "Vômito"] },
         { titulo: "Úlcera Gástrica", complicacoes: [] },
     ],
     "Fígado": [
@@ -115,15 +115,15 @@ export const cirurgias = {
         { titulo: "Colecistectomia", complicacoes: [] }
     ],
     "Sistema Cardiovascular": [
-        { titulo: "Neoplasia Cardíaca", complicacoes: [] },
-        { titulo: "Pericardiectomia", complicacoes: [] },
-        { titulo: "Pericardiocentese", complicacoes: [] },
-        { titulo: "Persistência Ducto Arterioso", complicacoes: [] },
+        { titulo: "Neoplasia Cardíaca", complicacoes: ["Arritmias Cardíacas", "Comprometimento Hemodinâmico", "Hemorragia Intraoperatória", "Infecção", "Metástase", "Recorrência Tumoral", "Sepse", "Tamponamento Cardíaco"] },
+        { titulo: "Pericardiectomia", complicacoes: ["Arritmias Cardíacas", "Atelectasia Pulmonar", "Efusão Pleural", "Hemorragia Intraoperatória", "Hérnia Cardíaca", "Infecções Pós-Operatórias", "Lesão do Nervo Frênico", "Recorrência de Efusões", "Tamponamento Cardíaco Residual"] },
+        { titulo: "Pericardiocentese", complicacoes: ["Hemorragias", "Infecção Intraoperatória", "Laceração Cardíaca", "Pneumopericárdio", "Pneumotórax", "Recorrência de Efusão Pericárdica", "Tamponamento Residual"] },
+        { titulo: "Persistência Ducto Arterioso", complicacoes: ["Complicações Anestésicas", "Embolização", "Hemorragia", "Infecção", "Lesão do Parênquima Pulmonar", "Reabertura Ductal ou Fluxo Residual e Hemólise"] },
     ],
     "Sistema Endócrino": [
-        { titulo: "Adrenalectomia", complicacoes: [] },
-        { titulo: "Pancreactomia Parcial", complicacoes: [] },
-        { titulo: "Tireoidectomia", complicacoes: [] }
+        { titulo: "Adrenalectomia", complicacoes: ["Arritmia", "Crises Hipertensivas", "Desequilíbrio Hidroeletrolítico", "Hemorragia", "Hipoadrenocorticismo", "Insuficiência Renal Aguda", "Isquemia Cardíaca", "Pancreatite", "Peritonite", "Tromboembolismo"] },
+        { titulo: "Pancreactomia Parcial", complicacoes: ["Fístulas Pancreáticas", "Hemorragias", "Infecções Intra-abdominais", "Pancreatite"] },
+        { titulo: "Tireoidectomia", complicacoes: ["Alterações Vocais", "Edema", "Hematomas", "Hemorragia", "Hipoparatireoidismo", "Metástases Linfáticas", "Metástases Pulmonares", "Paralisia Laríngea Unilateral ou Bilateral"] }
     ],
     "Sistema Hemolinfático": [
         { titulo: "Esplenectomia", complicacoes: ["Abcesso", "Alterações Hematológicas", "Arritmias", "Coagulação Intravascular Disseminada (CID)", "Hemorragia", "Infecções", "Necrose", "Septicemia", "Óbito"] },
