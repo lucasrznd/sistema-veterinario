@@ -22,31 +22,34 @@ export const ComplicacoesCirurgias = ({ formik }) => {
     return (
         <div>
             {formik.values.cirurgias.length !== undefined && formik.values.cirurgias.length > 0 ?
-                <h3>Complicações Selecionadas</h3> : <></>}
-            {/* <h3>Complicações Selecionadas</h3> */}
-            <TabView>
-                {formik.values.cirurgias.map((cirurgia, index) => (
-                    <TabPanel key={cirurgia.titulo} header={cirurgia.titulo}>
-                        <div key={index}>
-                            <DataTable value={cirurgia.complicacoes} rows={5} paginator emptyMessage="Sem complicações.">
-                                <Column field="complicacao" header="Complicação" align="center" alignHeader="center" body={(rowData) => rowData} />
-                                <Column
-                                    header="Ações"
-                                    align="center"
-                                    alignHeader="center"
-                                    body={(rowData) => (
-                                        <Button
-                                            icon="pi pi-trash"
-                                            className="p-button-rounded p-button-danger"
-                                            onClick={() => handleRemoveComplicacao(cirurgia.titulo, rowData)}
+                <>
+                    <h3>Complicações Selecionadas</h3>
+                    <TabView>
+                        {formik.values.cirurgias.map((cirurgia, index) => (
+                            <TabPanel key={cirurgia.titulo} header={cirurgia.titulo}>
+                                <div key={index}>
+                                    <DataTable value={cirurgia.complicacoes} rows={5} paginator emptyMessage="Sem complicações.">
+                                        <Column field="complicacao" header="Complicação" align="center" alignHeader="center" body={(rowData) => rowData} />
+                                        <Column
+                                            header="Ações"
+                                            align="center"
+                                            alignHeader="center"
+                                            body={(rowData) => (
+                                                <Button
+                                                    icon="pi pi-trash"
+                                                    className="p-button-rounded p-button-danger"
+                                                    onClick={() => handleRemoveComplicacao(cirurgia.titulo, rowData)}
+                                                />
+                                            )}
                                         />
-                                    )}
-                                />
-                            </DataTable>
-                        </div>
-                    </TabPanel>
-                ))}
-            </TabView>
+                                    </DataTable>
+                                </div>
+                            </TabPanel>
+                        ))}
+                    </TabView>
+                </>
+                : <></>}
+            {/* <h3>Complicações Selecionadas</h3> */}
 
             <div>
                 <h3>Observações</h3>
