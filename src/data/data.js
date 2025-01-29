@@ -10,7 +10,7 @@ export const cirurgias = {
         { titulo: "Hérnia Umbilical", complicacoes: ["Contaminação", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma"] }
     ],
     "Cavidade Oral": [
-        { titulo: "Biópsia", complicacoes: [] },
+        { titulo: "Biópsia", complicacoes: ["Aspiração de Fluidos", "Desconforto Mastigação", "Dificuldade Respiratória", "Hemorragia", "Infecção Local", "Lesões Adjascentes"] },
         { titulo: "Fenda Palatina", complicacoes: [] },
         { titulo: "Fístulas Oronasais", complicacoes: [] },
         { titulo: "Mucocele Salivar/Sialocele", complicacoes: [] },
@@ -23,12 +23,12 @@ export const cirurgias = {
     ],
     "Esôfago": [
         { titulo: "Acalasia Cricofaríngea", complicacoes: ["Pneumonia Aspirativa", "Seroma"] },
-        { titulo: "Anomalias Dos Aneis Vasculares", complicacoes: ["Bandas Fibróticas Persistentes", "Hemorragia", "Perfuração Esofágica", "Regurgitação Persistente", "Óbito"] },
+        { titulo: "Anomalias dos Aneis Vasculares", complicacoes: ["Bandas Fibróticas Persistentes", "Hemorragia", "Perfuração Esofágica", "Regurgitação Persistente", "Óbito"] },
         { titulo: "Endoscopia", complicacoes: ["Disfunção Neurológica do Esfíncter", "Distensão Gástrica", "Impossibilidade da Remoção do Corpo Estranho", "Laceração", "Perfuração"] },
         { titulo: "Esofagectomia Parcial", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Esofagotomia Cervical", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Esofagotomia Torácica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
-        { titulo: "Hérnia De Hiato", complicacoes: ["Anorexia", "Recidiva", "Ulceração no Local da Anastomose", "Vômito"] },
+        { titulo: "Hérnia de Hiato", complicacoes: ["Anorexia", "Recidiva", "Ulceração no Local da Anastomose", "Vômito"] },
         { titulo: "Intussuscepção Gastroesofágica", complicacoes: ["Contaminação", "Deiscência", "Estenoso Esofágica", "Extravasamento de Conteúdo Luminal", "Fistulação", "Infecção", "Regurgitação"] },
         { titulo: "Sonda Esofágica", complicacoes: ["Celulite Cervical", "Divertículo Esofágico", "Esofagite", "Estenose Esofágica", "Infecção", "Necessidade de Retirada", "Retirada pelo Paciente", "Vômito"] }
     ],
@@ -45,25 +45,25 @@ export const cirurgias = {
         { titulo: "Úlcera Gástrica", complicacoes: [] },
     ],
     "Fígado": [
-        { titulo: "Shunt P.Sistêmico", complicacoes: [] },
-        { titulo: "Lobectomia Hepática (Parcial/Total)", complicacoes: [] }
+        { titulo: "Shunt P.Sistêmico", complicacoes: ["Ascite", "Encefalopatia Hepática", "Fibrose Tecidual", "Hemorragias", "Hipertensão Portal", "Insuficiência Hepática Aguda", "Trombose"] },
+        { titulo: "Lobectomia Hepática (Parcial/Total)", complicacoes: ["Aderências Intra-Abdominais", "Choque Hipovolêmico", "Dor.", "Hemorragia", "Infcções de Sítio Cirúrgico", "Insuficiência Hepática", "Obstrução Intestinal", "Peritonite"] }
     ],
     "Intestino": [
-        { titulo: "Colectomia (Parcial/Total)", complicacoes: [] },
-        { titulo: "Colopexia", complicacoes: [] },
-        { titulo: "Colostomia", complicacoes: [] },
-        { titulo: "Enterectomia", complicacoes: [] },
-        { titulo: "Enterotomia", complicacoes: [] },
-        { titulo: "Plicatura Intestinal", complicacoes: [] }
+        { titulo: "Colectomia (Parcial/Total)", complicacoes: ["Aderencia de Mesentério", "Alteção Consistencia Fecal", "Deiscencia de Suturas", "Diarreia Temporaria", "Infecção Sitio Cirurgico", "Peritonite", "Vazamento Intestinal"] },
+        { titulo: "Colopexia", complicacoes: ["Contaminação", "Dor Local", "Falha de Aderencia", "Incontinencia Fecal Temporária", "Necrose Tecidual", "Peritonite", "Tenesmo", "Transfixação Da Agulha A Luz Do Colon", "Tração Excessiva"] },
+        { titulo: "Colostomia", complicacoes: ["Deiscencia de Sutura", "Dermatites Periestomais", "Incontinencia Fecal.", "Infecções", "Retração Prolapso Estoma"] },
+        { titulo: "Enterectomia", complicacoes: ["Aderencias Intestinais", "Choque Hipovolemico", "Deiscencia Anastomose", "Desequilibrio Eletrolitico", "Diarreia Persistente.", "Disturbios Metabolicos", "Estenoses Locais", "Hiponatremia", "Infecções Locais", "Má Absorção", "Obstrução Intestinal", "Perda Ponderal", "Peritonite", "Sindrome Do Intestino Curto"] },
+        { titulo: "Enterotomia", complicacoes: ["Aderencias Alças Intestinais", "Contaminação Cavidade Abdominal", "Deiscencia de Sutura", "Desidratação.", "Disturbios Metabolicos", "Estenose Segmentar", "Hemorragias", "Insuficiencia Intestinal", "Intecção Sitio Cirurgico", "Obstrução Secundária", "Peritonite Septica"] },
+        { titulo: "Plicatura Intestinal", complicacoes: ["Aderencias", "Dor Abdominal Persistente", "Estenoses", "Infecções", "Laceração", "Obstrução Secundária", "Perfurações Multiplas de Alça", "Peritonite Septica", "Ruptura Intestinal"] }
     ],
     "Neurocirurgia": [
-        { titulo: "Craniotomia", complicacoes: [] },
-        { titulo: "Fraturas/Luxações Vertebrais (Cervical/Toracolombar/Lombar/Lombossacro)", complicacoes: [] },
-        { titulo: "Hemilaminectomia Cervical", complicacoes: [] },
+        { titulo: "Craniotomia", complicacoes: ["Dano Tecidual", "Deficits Neurológicos", "Hemorragia", "Hipertensão Intracraniana", "Infecção de Sítio Cirurgico", "Meningite", "Recidiva de Cistos E Tumores"] },
+        { titulo: "Fraturas/Luxações Vertebrais (Cervical/Toracolombar/Lombar/Lombossacro)", complicacoes: ["A Instabilidade Residual Da Coluna", "Dor Crônica", "Incontinência Urinária e Infecções Pós-Operatórias ou Fecal", "Persistência ou Agravamento de Disfunções Neurológicas", "Solturas ou Fraturas"] },
+        { titulo: "Hemilaminectomia Cervical", complicacoes: ["Dor Crônica", "Fibrose Epidural", "Hemorragia Intraoperatórias", "Infecção", "Instabilidade Vertebral", "Lesoes Iatrogênicas À Medula Espinhal ou Raízes Nervosas"] },
         { titulo: "Hemilaminectomia/Pediculectomia (Toracolombar/Lombar/Lombossacro)", complicacoes: [] },
-        { titulo: "Instabilidade Atlantoaxial", complicacoes: [] },
+        { titulo: "Instabilidade Atlantoaxial", complicacoes: ["Falha ou Migração dos Implantes", "Infecções", "Lesões Neurológicas Iatrogênicas", "Perfuração Traqueal E Paralisia Laríngea", "Pneumonia Aspirativa"] },
         { titulo: "Laminectomia Dorsal (Toracolombar/Lombar/Lombossacro)", complicacoes: [] },
-        { titulo: "Slot Ventral", complicacoes: [] }
+        { titulo: "Slot Ventral", complicacoes: ["Déficits Neurológicos Iatrogênicos", "Falha Na Descompressão Completa", "Fibrose Epidural", "Infecções No Local Cirúrgico", "Instabilidade Vertebral", "O Risco De Lesão Do Seio Venoso Vertebral"] }
     ],
     "Olhos e Anexos": [
         { titulo: "Catarata", complicacoes: ["Deslocamento de Retina", "Edema Corneano", "Endoftalmite", "Hemorragia", "Hiperemia Ocular", "Hipertensão Intraocular", "Lesões Corneanas", "Opacificação da Cápsula", "Retinopatia", "Sinéquia", "Uveíte"] },
