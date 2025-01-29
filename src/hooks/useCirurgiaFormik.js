@@ -25,7 +25,8 @@ export const useCirurgiaFormik = (onSubmitCallback) => {
             nomeCirurgiaoDois: '',
             nomeCirurgiaoTres: '',
             cirurgias: [],
-            observacoes: ''
+            observacoes: '',
+            termoConsentimento: false,
         },
         validate: (data) => {
             let errors = {};
@@ -104,6 +105,10 @@ export const useCirurgiaFormik = (onSubmitCallback) => {
 
             if (!data.nomeCirurgiaoUm) {
                 errors.nomeCirurgiaoUm = "O campo 'Nome do Cirurgião' é obrigatório.";
+            }
+
+            if (!data.termoConsentimento) {
+                errors.termoConsentimento = "Termo de Consentimento obrigatório.";
             }
 
             return errors;
