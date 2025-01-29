@@ -221,7 +221,9 @@ dou o consentimento para que o mesmo seja realizado.`;
 
                         <StepperPanel header="Cirurgias">
                             <FormCirurgias formik={formik} />
-                            <ComplicacoesCirurgias formik={formik} />
+                            <ComplicacoesCirurgias formik={formik}
+                                isFormFieldValid={isFormFieldValid}
+                                getFormErrorMessage={getFormErrorMessage} />
                             <div className="flex pt-4 justify-content-between">
                                 <Button label="Voltar" severity="secondary" icon="pi pi-arrow-left" onClick={() => stepperRef.current.prevCallback()} />
                                 <Button label="Gerar PDF" type="submit" icon="pi pi-file-pdf" iconPos="right" onClick={handlePDFSubmit} />
