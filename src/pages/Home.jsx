@@ -197,7 +197,7 @@ dou o consentimento para que o mesmo seja realizado.`;
                             </div>
                         </StepperPanel>
 
-                        <StepperPanel header="Identificação do Responsavél">
+                        <StepperPanel header="Identificação do Responsável">
                             <IdentificacaoResponsavel
                                 formik={formik}
                                 isFormFieldValid={isFormFieldValid}
