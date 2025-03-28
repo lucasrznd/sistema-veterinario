@@ -1,7 +1,7 @@
 export const especiesDeAnimais = [{ descricao: 'Canina' }, { descricao: 'Felina' }];
 
 export const cirurgias = {
-    "Cavidade Abdominal": [
+    "Parede Abdominal": [
         { titulo: "Abdominocentese", complicacoes: ["Hemorragia", "Hipoperfusão", "Hipotensão", "Lesão de Órgãos", "Óbito"] },
         { titulo: "Celiotomia (Laparotomia) Exploratória", complicacoes: ["Contaminação", "Deiscência", "Infecção", "Óbito"] },
         { titulo: "Hérnia Abdominal (Eventração/Evisceração)", complicacoes: ["Contaminação", "Infecção", "Inflamação", "Peritonite", "Recidiva", "Seroma"] },
