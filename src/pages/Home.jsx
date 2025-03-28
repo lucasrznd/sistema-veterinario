@@ -129,7 +129,7 @@ export default function Home() {
 
         // Centraliza o título
         doc.setFontSize(16);
-        doc.text("Termo de Responsabilidade", doc.internal.pageSize.width / 2, 20, { align: "center" });
+        doc.text("Termo de Esclarecimento e Ciência sobre o Procedimento Cirúrgico", doc.internal.pageSize.width / 2, 20, { align: "center" });
 
         // Configurações do texto
         doc.setFontSize(12);
@@ -197,7 +197,7 @@ dou o consentimento para que o mesmo seja realizado.`;
                             </div>
                         </StepperPanel>
 
-                        <StepperPanel header="Identificação do Responsavél">
+                        <StepperPanel header="Identificação do Responsável">
                             <IdentificacaoResponsavel
                                 formik={formik}
                                 isFormFieldValid={isFormFieldValid}

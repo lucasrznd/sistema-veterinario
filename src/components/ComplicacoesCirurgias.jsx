@@ -10,6 +10,7 @@ import { textoTermoConsentimento } from '../utils/textos';
 
 export const ComplicacoesCirurgias = ({ formik, isFormFieldValid, getFormErrorMessage }) => {
     const [dialogVisible, setDialogVisible] = useState(false);
+    const [termoLido, setTermoLido] = useState(false);
 
     const handleDialogOpen = () => {
         setDialogVisible(true);
@@ -17,12 +18,14 @@ export const ComplicacoesCirurgias = ({ formik, isFormFieldValid, getFormErrorMe
 
     const handleDialogClose = () => {
         setDialogVisible(false);
+        setTermoLido(true);
+        formik.setFieldValue('termoConsentimento', true)
     };
 
     const dialogFooter = () => {
         return (
             <div>
-                <Button label="Fechar" icon="pi pi-times" onClick={handleDialogClose} />
+                <Button label="Li e Concordo" icon="pi pi-check" onClick={handleDialogClose} />
             </div>
         );
     }
@@ -87,6 +90,7 @@ export const ComplicacoesCirurgias = ({ formik, isFormFieldValid, getFormErrorMe
 
             <div className="p-field-checkbox mt-2">
                 <Checkbox inputId="terms" checked={formik.values.termoConsentimento} onChange={(e) => formik.setFieldValue('termoConsentimento', e.checked)}
+                    disabled={!termoLido}
                     className={isFormFieldValid('termoConsentimento') ? "p-invalid uppercase" : "uppercase"} />
                 <label className='ml-1'>
                     Concordo com os{' '}
