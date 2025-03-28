@@ -43,3 +43,12 @@ Esta aplicação é um Front-end para gerenciamento de cirurgias em animais, rep
     <td><img width="700" alt="Prancheta 4" src="https://github.com/user-attachments/assets/6102691b-ec11-4dcd-bc52-772f7f3b4d7a"></td>
   </tr>
 </table>
+
+<h2 id="author">👨🏻‍💻 Autor</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/lucasrznd"><img src="https://avatars.githubusercontent.com/u/101664450?v=4&v=" width="115px;" alt="Lucas Rezende"/><br /><sub><b>Lucas Rezende</b></sub></a><br/><a title="Code">💻</a></td>
+  </tbody>
+</table>
